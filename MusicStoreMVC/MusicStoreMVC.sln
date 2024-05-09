@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStoreMVC", "MusicStoreMVC.csproj", "{C25944D3-A81C-4766-9C8A-6F68ABF433F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStoreMVC", "MusicStoreMVC.csproj", "{C25944D3-A81C-4766-9C8A-6F68ABF433F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Visual", "02 - Visual", "{4EF4DA1F-95A4-4D0B-9416-5AD472BE4A6C}"
 EndProject
@@ -16,6 +16,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Utilities", "01 - Util
 		EFComands.txt = EFComands.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Repositories", "..\MusicStore.Repository\MusicStore.Repositories.csproj", "{8EDA64A1-4AA4-467A-B7F0-B4BDE00F10C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Services", "..\MusicStore.Services\MusicStore.Services.csproj", "{01F49956-3005-46C5-8997-6785132D98E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.EntityFrameworkMigrations", "..\MusicStore.EntityFrameworkMigrations\MusicStore.EntityFrameworkMigrations.csproj", "{D6EAEE12-91F8-44FD-974A-1526FA7967B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,12 +32,27 @@ Global
 		{C25944D3-A81C-4766-9C8A-6F68ABF433F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C25944D3-A81C-4766-9C8A-6F68ABF433F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C25944D3-A81C-4766-9C8A-6F68ABF433F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDA64A1-4AA4-467A-B7F0-B4BDE00F10C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDA64A1-4AA4-467A-B7F0-B4BDE00F10C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDA64A1-4AA4-467A-B7F0-B4BDE00F10C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDA64A1-4AA4-467A-B7F0-B4BDE00F10C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F49956-3005-46C5-8997-6785132D98E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F49956-3005-46C5-8997-6785132D98E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F49956-3005-46C5-8997-6785132D98E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F49956-3005-46C5-8997-6785132D98E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EAEE12-91F8-44FD-974A-1526FA7967B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EAEE12-91F8-44FD-974A-1526FA7967B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EAEE12-91F8-44FD-974A-1526FA7967B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EAEE12-91F8-44FD-974A-1526FA7967B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C25944D3-A81C-4766-9C8A-6F68ABF433F1} = {4EF4DA1F-95A4-4D0B-9416-5AD472BE4A6C}
+		{8EDA64A1-4AA4-467A-B7F0-B4BDE00F10C1} = {4F4DFF67-2314-49F5-9CC5-ED8A8116072E}
+		{01F49956-3005-46C5-8997-6785132D98E2} = {AAC8284E-C18C-4953-83D9-EC0CA802E9FC}
+		{D6EAEE12-91F8-44FD-974A-1526FA7967B0} = {4F4DFF67-2314-49F5-9CC5-ED8A8116072E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BEF20E06-4AC2-4CBF-8CB9-644F0B2C2021}

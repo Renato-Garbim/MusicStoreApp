@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MusicStoreMVC.Entidades
+namespace MusicStore.Repositories.Bases
 {
     public class EntityBase
     {

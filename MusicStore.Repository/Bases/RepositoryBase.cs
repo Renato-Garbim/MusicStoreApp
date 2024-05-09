@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MusicStoreMVC.Repositorio.Interfaces;
 
-namespace MusicStoreMVC.Repositorio
+namespace MusicStore.Repositories.Bases
 {
     public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {

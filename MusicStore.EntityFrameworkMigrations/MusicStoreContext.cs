@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MusicStoreMVC.Entidades;
+using MusicStore.Repositories.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MusicStoreMVC.Contexto
+namespace MusicStore.EntityFrameworkMigrations
 {
     public class MusicStoreContext : DbContext
     {

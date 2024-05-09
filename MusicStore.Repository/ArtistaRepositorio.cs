@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MusicStoreMVC.Entidades;
+using MusicStore.Repositories.Bases;
+using MusicStore.Repositories.Entidades;
 
 namespace MusicStoreMVC.Repositorio
 {

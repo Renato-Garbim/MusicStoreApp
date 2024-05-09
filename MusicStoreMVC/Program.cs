@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MusicStoreMVC.Contexto;
+using MusicStore.EntityFrameworkMigrations;
 
 var builder = WebApplication.CreateBuilder(args);
 

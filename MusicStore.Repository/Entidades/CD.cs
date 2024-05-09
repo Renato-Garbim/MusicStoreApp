@@ -1,4 +1,6 @@
-﻿namespace MusicStoreMVC.Entidades
+﻿using MusicStore.Repositories.Bases;
+
+namespace MusicStore.Repositories.Entidades
 {
     public class CD : EntityBase
     {
