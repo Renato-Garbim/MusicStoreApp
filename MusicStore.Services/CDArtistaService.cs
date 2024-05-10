@@ -18,5 +18,15 @@ namespace MusicStore.Services
         {
             _CDArtistaRepository = CDArtistaRepository;
         }
+
+        public int ObterIdPor(int cdId)
+        {
+            return _CDArtistaRepository.ObterCDArtistaIdPor(cdId);
+        }
+
+        public int ObterArtistaIdPor(int cdId)
+        {
+            return _CDArtistaRepository.ObterArtistaIdPor(cdId);
+        }
     }
 }

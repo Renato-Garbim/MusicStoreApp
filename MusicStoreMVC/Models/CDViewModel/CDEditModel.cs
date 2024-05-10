@@ -7,11 +7,12 @@ namespace MusicStoreMVC.Models.CDViewModel
     {
         public List<Artista> ListaArtista { get; set; }
         public List<Genero> ListaGenero { get; set; }
-        public int GeneroId { get; set; }
+        public List<Musica> Musicas { get; set; }
+        public CD Album { get; set; }
         public int ArtistaId { get; set; }
-        public string Titulo { get; set; }
-        public int Ano { get; set; }
 
+        public string TituloMusica { get; set; }
+        public decimal DuracaoMusica { get; set; }
 
     }
 }

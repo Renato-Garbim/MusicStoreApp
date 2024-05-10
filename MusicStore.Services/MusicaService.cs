@@ -18,5 +18,19 @@ namespace MusicStore.Services
         {
             _MusicaRepository = MusicaRepository;
         }
+
+        public IQueryable<Musica> ObterRegistrosPor(int artistaId)
+        {
+            return _MusicaRepository.ObterMusicasPor(artistaId);
+        }
+
+        public Musica ObterMusicaPor(string tituloMusica)
+        {
+            var registros = _MusicaRepository.GetAllRecords();
+            var musica = registros.FirstOrDefault(x => x.titulo == tituloMusica);
+
+            return musica != null ? musica : new Musica();
+        }
+
     }
 }

@@ -10,6 +10,8 @@ namespace MusicStore.Repositories.Interfaces
 {
     public interface ICDArtistaRepository : IRepositoryBase<CDArtista>
     {
-
+        int ObterCDArtistaIdPor(int cdId);
+        int ObterArtistaIdPor(int cdId);
+        int ObterCdIdPor(int artistaId);
     }
 }

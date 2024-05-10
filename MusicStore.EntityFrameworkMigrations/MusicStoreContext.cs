@@ -19,6 +19,6 @@ namespace MusicStore.EntityFrameworkMigrations
         public DbSet<CD> CD { get; set; }
         public DbSet<Genero> Genero { get; set; }
         public DbSet<Musica> Musica { get; set; }
-        public DbSet<CDArtista> Discografia { get; set; }
+        public DbSet<CDArtista> CDArtista { get; set; }
     }
 }

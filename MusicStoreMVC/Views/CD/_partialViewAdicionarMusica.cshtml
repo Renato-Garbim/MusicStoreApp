@@ -1,0 +1,31 @@
+﻿@model MusicStoreMVC.Models.CDViewModel.CDEditModel
+
+<section>
+    <form method="post" asp-controller="CD" asp-action="AdicionarMusica">
+        <div class="card-body">
+
+            <input type="hidden" asp-for="ArtistaId" />
+            <input type="hidden" asp-for="Album.Id" />
+
+            <div>
+                <label asp-for="TituloMusica">Título:</label>
+                <input asp-for="TituloMusica" class="form-control" />
+            </div>
+
+            <div>
+                <label asp-for="DuracaoMusica">Duração:</label>
+                <input asp-for="DuracaoMusica" class="form-control" />
+            </div>
+
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Adicionar Musica</button>
+        </div>
+
+    </form>
+</section>
+
+
+
+
+

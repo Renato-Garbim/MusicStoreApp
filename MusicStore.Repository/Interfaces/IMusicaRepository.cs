@@ -10,6 +10,7 @@ namespace MusicStore.Repositories.Interfaces
 {
     public interface IMusicaRepository : IRepositoryBase<Musica>
     {
-
+        IQueryable<Musica> ObterMusicasPor(int artistaId);
+        Musica ObterMusicaPor(string tituloMusica);
     }
 }

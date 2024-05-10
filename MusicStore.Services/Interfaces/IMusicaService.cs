@@ -10,6 +10,7 @@ namespace MusicStore.Services.Interfaces
 {
     public interface IMusicaService : IServiceBase<Musica>
     {
-
+        IQueryable<Musica> ObterRegistrosPor(int artistaId);
+        Musica ObterMusicaPor(string tituloMusica);
     }
 }

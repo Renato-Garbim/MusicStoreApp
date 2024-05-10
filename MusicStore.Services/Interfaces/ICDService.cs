@@ -10,6 +10,7 @@ namespace MusicStore.Services.Interfaces
 {
     public interface ICDService : IServiceBase<CD>
     {
-
+        int ObterCDIdPor(string titulo, int ano);
+        IQueryable<CD> FiltrarCdPor(string tituloAlbum, string nomeMusica, int generoId, int artistaId);
     }
 }

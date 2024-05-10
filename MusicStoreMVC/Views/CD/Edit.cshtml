@@ -1,0 +1,20 @@
+﻿@model MusicStoreMVC.Models.CDViewModel.CDEditModel
+
+@{
+    ViewData["Title"] = "Edição de CD";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Editando CD</h1>
+
+    <partial name="_partialViewEditarCD" model="Model"></partial>
+
+    <hr />
+
+    <partial name="_partialViewAdicionarMusica" model="Model"></partial>
+
+    <hr />
+
+    <partial name="_partialViewMusicas" model="Model"></partial>
+
+</div> 

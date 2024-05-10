@@ -5,21 +5,26 @@
 }
 
 
-@if (Model.ListaArtista.Any())
+@if (Model.ListaCD.Any())
 {
     <table class="table">
         <thead>
             <tr>
-                <th>Nome dos Artistas</th>
+                <th>Titulo do Album</th>
+                <th>Edição</th>
             </tr>
         </thead>
         <tbody>
 
-            @foreach (var artista in Model.ListaArtista)
+            @foreach (var artista in Model.ListaCD)
             {
                 <tr>
-                    <td>@artista.Nome</td>
+                    <td>@artista.Titulo</td>
+                    <td>
+                        <a class="btn btn-secondary" href="@Url.Action("Edit", "CD", new{id = artista.Id})">Editar CD</a>
+                    </td>
                 </tr>
+                
             }
 
         </tbody>

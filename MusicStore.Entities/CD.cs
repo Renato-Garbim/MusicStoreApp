@@ -9,7 +9,6 @@ namespace MusicStore.Entities
         public string Titulo { get; set; }
         public int Ano { get; set; }
 
-        public virtual ICollection<Musica> Musicas { get; set; }
         public virtual ICollection<CDArtista> ArtistasDoCD { get; set; }
 
         public virtual Genero Genero { get; set; }

@@ -1,0 +1,48 @@
+﻿@model MusicStoreMVC.Models.CDViewModel.CDEditModel
+
+<section>
+    <form method="post" asp-controller="CD" asp-action="Salvar">
+
+        <input type="hidden" asp-for="Album.Id" />
+        
+
+        <div class="card-body">
+
+
+            <div>
+                <label asp-for="Album.Titulo">Título:</label>
+                <input asp-for="Album.Titulo" class="form-control" />
+            </div>
+
+            <div>
+                <label asp-for="Album.Ano">Ano:</label>
+                <input asp-for="Album.Ano" class="form-control" />
+            </div>
+
+            <div>
+                <label asp-for="ListaGenero">Gênero:</label>
+                <select asp-for="Album.GeneroId" class="form-control" asp-items="@(new SelectList(Model.ListaGenero, "Id", "Descricao"))">
+                    <option value="">Selecione um Gênero</option>
+                </select>
+            </div>
+
+            <div>
+                <label asp-for="ListaArtista">Artista:</label>
+                <select asp-for="ArtistaId" class="form-control" asp-items="@(new SelectList(Model.ListaArtista, "Id", "Nome"))">
+                    <option value="">Selecione um Artista</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+
+    </form>
+</section>
+
+
+
+
+

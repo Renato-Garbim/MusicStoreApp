@@ -1,0 +1,41 @@
+﻿@model MusicStoreMVC.Models.CDViewModel.CDEditModel
+
+
+@if (Model.Musicas.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Titulo da Musica</th>
+                <th>Duração</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var musica in Model.Musicas)
+            {
+                <tr>
+                    <td>@musica.titulo</td>
+                    <td>
+                        @musica.duracao
+                    </td>
+                </tr>
+                
+            }
+
+        </tbody>
+    </table>
+}
+else
+{
+    <div>
+        <h3>Nenhuma Musica Registrada</h3>
+    </div>
+}
+
+
+
+
+
+
+

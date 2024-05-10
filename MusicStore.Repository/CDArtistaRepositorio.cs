@@ -12,5 +12,27 @@ namespace MusicStoreMVC.Repositorio
         {
 
         }
+
+        public int ObterArtistaIdPor(int cdId)
+        {
+            var registro = Db.Set<CDArtista>().Where(x => x.CDId == cdId).FirstOrDefault();
+
+            return registro == null ? 0 : registro.ArtistaId;
+        }
+
+        public int ObterCDArtistaIdPor(int cdId)
+        {
+            var registro = Db.Set<CDArtista>().Where(x => x.CDId == cdId).FirstOrDefault();
+
+            return registro == null ? 0 : registro.Id;
+        }
+
+        public int ObterCdIdPor(int artistaId)
+        {
+            var registro = Db.Set<CDArtista>().Where(x => x.ArtistaId == artistaId).FirstOrDefault();
+
+            return registro == null ? 0 : registro.CDId;
+        }
+
     }
 }

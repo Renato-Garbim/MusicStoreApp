@@ -1,0 +1,57 @@
+﻿@model MusicStoreMVC.Models.CDViewModel.CDViewModel
+
+@{
+    ViewData["Title"] = "_partialViewAlbums";
+}
+
+
+<section>
+    <form method="post" asp-controller="CD" asp-action="Pesquisar">
+        <div class="card-body">
+            
+            <div class="row">
+                <div class="col-6">
+
+                        <label asp-for="AlbumTitulo">Nome do Album:</label>
+                        <input asp-for="AlbumTitulo" class="form-control" />
+                    
+                </div>
+
+                <div class="col-6">
+                    <label asp-for="MusicaTitulo">Nome da Musica:</label>
+                    <input asp-for="MusicaTitulo" class="form-control" />
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-6">
+                    <label asp-for="ListaGenero">Gênero:</label>
+                    <select asp-for="Genero" class="form-control" asp-items="@(new SelectList(Model.ListaGenero, "Id", "Descricao"))">
+                        <option value="">Selecione um Gênero</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label asp-for="ListaArtista">Artista:</label>
+                    <select asp-for="Artista" class="form-control" asp-items="@(new SelectList(Model.ListaArtista, "Id", "Nome"))">
+                        <option value="">Selecione um Artista</option>
+                    </select>
+                </div>
+            </div>
+
+           
+           
+
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </div>
+
+    </form>
+</section>
+
+
+
+
+
+

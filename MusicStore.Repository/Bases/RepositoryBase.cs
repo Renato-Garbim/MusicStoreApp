@@ -38,11 +38,15 @@ namespace MusicStore.Repositories.Bases
 
                 inseridoSucesso = true;
 
+                CommitAsync();
+
             }
             catch (DbUpdateException /* ex */)
             {
                 inseridoSucesso = false;
             }
+
+
 
             return inseridoSucesso;
         }
@@ -55,6 +59,8 @@ namespace MusicStore.Repositories.Bases
             {
                 DBSet.Update(obj);
                 updateSucesso = true;
+
+                CommitAsync();
             }
             catch (DbUpdateException /* ex */)
             {
@@ -73,6 +79,8 @@ namespace MusicStore.Repositories.Bases
                 DBSet.Remove(obj);
 
                 removidoSucesso = true;
+
+                CommitAsync();
             }
             catch (DbUpdateException /* ex */)
             {

@@ -10,6 +10,7 @@ namespace MusicStore.Services.Interfaces
 {
     public interface ICDArtistaService : IServiceBase<CDArtista>
     {
-
+        int ObterIdPor(int cdId);
+        int ObterArtistaIdPor(int cdId);
     }
 }

@@ -10,6 +10,6 @@ namespace MusicStore.Repositories.Interfaces
 {
     public interface ICDRepository : IRepositoryBase<CD>
     {
-
+        int ObterCDIdPor(string titulo, int ano);
     }
 }
