@@ -16,11 +16,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Utilities", "01 - Util
 		EFComands.txt = EFComands.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Repositories", "..\MusicStore.Repository\MusicStore.Repositories.csproj", "{8EDA64A1-4AA4-467A-B7F0-B4BDE00F10C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStore.Repositories", "..\MusicStore.Repository\MusicStore.Repositories.csproj", "{8EDA64A1-4AA4-467A-B7F0-B4BDE00F10C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Services", "..\MusicStore.Services\MusicStore.Services.csproj", "{01F49956-3005-46C5-8997-6785132D98E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStore.Services", "..\MusicStore.Services\MusicStore.Services.csproj", "{01F49956-3005-46C5-8997-6785132D98E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.EntityFrameworkMigrations", "..\MusicStore.EntityFrameworkMigrations\MusicStore.EntityFrameworkMigrations.csproj", "{D6EAEE12-91F8-44FD-974A-1526FA7967B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStore.EntityFrameworkMigrations", "..\MusicStore.EntityFrameworkMigrations\MusicStore.EntityFrameworkMigrations.csproj", "{D6EAEE12-91F8-44FD-974A-1526FA7967B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.5 - Cross", "02.5 - Cross", "{32F7978C-C69C-4DA3-AB8A-AA244120A357}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStoreIOC", "..\MusicStoreIOC\MusicStoreIOC.csproj", "{60C825B9-5403-45E7-95B4-8F91212E14B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Entities", "..\MusicStore.Entities\MusicStore.Entities.csproj", "{DBE3A4EB-DC36-4E7A-9810-08ED43C5F254}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +50,14 @@ Global
 		{D6EAEE12-91F8-44FD-974A-1526FA7967B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6EAEE12-91F8-44FD-974A-1526FA7967B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6EAEE12-91F8-44FD-974A-1526FA7967B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C825B9-5403-45E7-95B4-8F91212E14B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C825B9-5403-45E7-95B4-8F91212E14B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C825B9-5403-45E7-95B4-8F91212E14B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C825B9-5403-45E7-95B4-8F91212E14B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE3A4EB-DC36-4E7A-9810-08ED43C5F254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE3A4EB-DC36-4E7A-9810-08ED43C5F254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE3A4EB-DC36-4E7A-9810-08ED43C5F254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE3A4EB-DC36-4E7A-9810-08ED43C5F254}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +67,8 @@ Global
 		{8EDA64A1-4AA4-467A-B7F0-B4BDE00F10C1} = {4F4DFF67-2314-49F5-9CC5-ED8A8116072E}
 		{01F49956-3005-46C5-8997-6785132D98E2} = {AAC8284E-C18C-4953-83D9-EC0CA802E9FC}
 		{D6EAEE12-91F8-44FD-974A-1526FA7967B0} = {4F4DFF67-2314-49F5-9CC5-ED8A8116072E}
+		{60C825B9-5403-45E7-95B4-8F91212E14B3} = {32F7978C-C69C-4DA3-AB8A-AA244120A357}
+		{DBE3A4EB-DC36-4E7A-9810-08ED43C5F254} = {4F4DFF67-2314-49F5-9CC5-ED8A8116072E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BEF20E06-4AC2-4CBF-8CB9-644F0B2C2021}

@@ -1,6 +1,6 @@
-﻿using MusicStore.Repositories.Bases;
+﻿using MusicStore.Entities.Base;
 
-namespace MusicStore.Repositories.Entidades
+namespace MusicStore.Entities
 {
     public class CD : EntityBase
     {
@@ -10,6 +10,8 @@ namespace MusicStore.Repositories.Entidades
         public int Ano { get; set; }
 
         public virtual ICollection<Musica> Musicas { get; set; }
+        public virtual ICollection<CDArtista> ArtistasDoCD { get; set; }
+
         public virtual Genero Genero { get; set; }
 
 

@@ -1,0 +1,40 @@
+﻿@model MusicStoreMVC.Models.CDViewModel.CDViewModel
+
+@{
+    ViewData["Title"] = "_partialViewAlbums";
+}
+
+
+@if (Model.ListaArtista.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome dos Artistas</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var artista in Model.ListaArtista)
+            {
+                <tr>
+                    <td>@artista.Nome</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+}
+else
+{
+    <div>
+        <h3>Nenhum Registro localizado</h3>
+    </div>
+}
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-﻿using MusicStore.Repositories.Entidades;
+﻿using MusicStore.Entities;
 using MusicStore.Services.Base;
 using System;
 using System.Collections.Generic;

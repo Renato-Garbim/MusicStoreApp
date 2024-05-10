@@ -1,8 +1,25 @@
-﻿@{
+﻿@model MusicStoreMVC.Models.CDViewModel.CDViewModel
+
+@{
     ViewData["Title"] = "Music Store - Lista de CDs";
 }
 
 <div class="text-center">
     <h1 class="display-4">Lista de CDs</h1>
-    <p>Lista de cds aqui!</p>
+
+    <section style="margin:0 auto;">
+
+        <div class="card-body">
+            <partial name="_partialViewAlbums" model="Model"></partial>
+        </div>
+        <div class="card-footer">
+
+            <a class="btn btn-primary" asp-controller="CD" asp-action="Adicionar">
+                Adicionar Novo Registro
+            </a>
+
+        </div>
+        
+    </section>
+          
 </div>

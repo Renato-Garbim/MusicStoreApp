@@ -7,16 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MusicStore.Entities\MusicStore.Entities.csproj" />
     <ProjectReference Include="..\MusicStore.EntityFrameworkMigrations\MusicStore.EntityFrameworkMigrations.csproj" />
+    <ProjectReference Include="..\MusicStore.Services\MusicStore.Services.csproj" />
+    <ProjectReference Include="..\MusicStoreIOC\MusicStoreIOC.csproj" />
   </ItemGroup>
 
 </Project>

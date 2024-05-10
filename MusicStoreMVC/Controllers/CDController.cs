@@ -1,32 +1,58 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MusicStore.Services.Interfaces;
+using MusicStoreMVC.Models.CDViewModel;
 
 namespace MusicStoreMVC.Controllers
 {
     public class CDController : Controller
-    {
+    {          
+        private readonly IArtistaService _artistaService;
+        private readonly IGeneroService _generoService;
+
+        public CDController(IArtistaService artistaService, IGeneroService generoService)
+        {
+            _artistaService = artistaService;
+            _generoService = generoService;
+        }
+
+        private CDViewModel CarregarViewModel()
+        {
+            var model = new CDViewModel();
+            model.ListaArtista = _artistaService.GetAllRecords().ToList();            
+
+            return model;
+        }
+
+        private CDEditModel CarregarEditModel()
+        {
+            var model = new CDEditModel();
+
+            model.ListaArtista = _artistaService.GetAllRecords().ToList();
+            model.ListaGenero = _generoService.GetAllRecords().ToList();
+
+            return model;
+        }
+
+
         // GET: CDController
         public ActionResult Index()
         {
-            return View();
+            var model = CarregarViewModel();
+            return View(model);
         }
-
-        // GET: CDController/Details/5
-        public ActionResult Details(int id)
+                        
+        public ActionResult Adicionar()
         {
-            return View();
-        }
+            var model = CarregarEditModel();
 
-        // GET: CDController/Create
-        public ActionResult Create()
-        {
-            return View();
+            return View(model);
         }
 
         // POST: CDController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Salvar(CDEditModel model)
         {
             try
             {

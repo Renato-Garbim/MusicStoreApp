@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace MusicStore.Services
 {
-    public class ArtistaService : ServiceBase<Artista>, IArtistaService
+    public class MusicaService : ServiceBase<Musica>, IMusicaService
     {
-        private readonly IArtistaRepository _artistaRepository;
+        private readonly IMusicaRepository _MusicaRepository;
         
-        public ArtistaService(IArtistaRepository artistaRepository) : base(artistaRepository) 
+        public MusicaService(IMusicaRepository MusicaRepository) : base(MusicaRepository) 
         {
-            _artistaRepository = artistaRepository;
+            _MusicaRepository = MusicaRepository;
         }
     }
 }

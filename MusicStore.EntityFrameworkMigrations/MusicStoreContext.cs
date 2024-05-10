@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MusicStore.Repositories.Entidades;
+using MusicStore.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +19,6 @@ namespace MusicStore.EntityFrameworkMigrations
         public DbSet<CD> CD { get; set; }
         public DbSet<Genero> Genero { get; set; }
         public DbSet<Musica> Musica { get; set; }
+        public DbSet<CDArtista> Discografia { get; set; }
     }
 }

@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace MusicStore.Repositories.Interfaces
 {
-    public interface IArtistaRepository : IRepositoryBase<Artista>
+    public interface ICDRepository : IRepositoryBase<CD>
     {
+
     }
 }

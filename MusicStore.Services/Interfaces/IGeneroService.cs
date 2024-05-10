@@ -1,14 +1,15 @@
 ﻿using MusicStore.Entities;
-using MusicStoreMVC.Repositorio.Interfaces;
+using MusicStore.Services.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MusicStore.Repositories.Interfaces
+namespace MusicStore.Services.Interfaces
 {
-    public interface IArtistaRepository : IRepositoryBase<Artista>
+    public interface IGeneroService : IServiceBase<Genero>
     {
+
     }
 }

@@ -1,11 +1,11 @@
-﻿using MusicStore.Repositories.Bases;
+﻿using MusicStore.Entities.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MusicStore.Repositories.Entidades
+namespace MusicStore.Entities
 {
     public class Artista : EntityBase
     {
@@ -13,6 +13,6 @@ namespace MusicStore.Repositories.Entidades
         public string Nome { get; set; }
 
         public virtual ICollection<Musica> Musicas { get; set; }
-
+        public virtual ICollection<CDArtista> Discografia { get; set; }
     }
 }

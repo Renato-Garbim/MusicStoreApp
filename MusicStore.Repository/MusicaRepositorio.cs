@@ -6,9 +6,9 @@ using MusicStore.Repositories.Interfaces;
 
 namespace MusicStoreMVC.Repositorio
 {
-    public class ArtistaRepositorio : RepositoryBase<Artista>, IArtistaRepository
+    public class MusicaRepositorio : RepositoryBase<Musica>, IMusicaRepository
     {
-        public ArtistaRepositorio(MusicStoreContext db) : base(db)
+        public MusicaRepositorio(MusicStoreContext db) : base(db)
         {
 
         }

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MusicStore.EntityFrameworkMigrations;
+using MusicStoreIOC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<MusicStoreContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("MusicStoreContext")));
+BootstrapIOC.RegisterServices(builder.Services);
 
 var app = builder.Build();
 
